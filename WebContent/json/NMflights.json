@@ -1,0 +1,6 @@
+[
+ { "flightName": "Indigo E6-185", "duration": "1h :0m",  "flightCode":"6E",     "returnTime": 2, "time": "11:13 - 12:13", "trip-fare": "1,753", "fare" : 1753, "departs": 1314942180000, "arrives":  1314945780000, "cb":"0"},
+ { "flightName": "KF Red E6-185", "duration": "1h :0m",  "flightCode":"IT-RED", "returnTime": 2, "time": "10:13 - 11:13", "trip-fare": "2,819", "fare" : 2819, "departs": 1314938580000, "arrives":  1314942180000, "cb":"2"},
+ { "flightName": "Spice E6-185",  "duration": "1h :50m", "flightCode":"SG",     "returnTime": 1, "time": "6:13 - 8:03",   "trip-fare": "1,953",   "fare" : 1953, "departs": 1314924180000, "arrives":  1314930780000, "cb":"1"},
+ { "flightName": "Indigo E6-188", "duration": "5h :0m",  "flightCode":"6E",     "returnTime": 2, "time": "11:13 - 16:13", "trip-fare": "9,917", "fare" : 9917, "departs": 1314942180000, "arrives":  1314960180000, "cb":"3"}
+]

@@ -1,0 +1,258 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<title>Cleartrip</title> 
+		<meta name="viewport" content="width=device-width, user-scalable=no"/> 
+		<link media="screen" href="./static/css/style.css" type= "text/css" rel="stylesheet">
+		<style>
+		</style>
+		<script type="text/javascript">
+			/**
+			*	script block for JSON
+			*/
+		</script>
+	</head>
+        <body>
+            <div class="header">
+                <div class="logo">
+                    <img src="./static/images/cleartrip_logo.gif" alt="cleartrip" height="25px" />
+                </div>
+                <ul>
+                    <li>
+                        <a class="flight selected" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="suitcase" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="settings" href="#"></a>
+                    </li>
+            </div>
+            <div class="content">
+                <h1>
+                    <strong class="stop">New Delhi - Mumbai</strong>
+                    <span>Mon, 02 Aug - Sun, 08 Aug</span><span class="thin"> | 2 adults, 2 children</span>
+					<a class="pillButton fRight" href="javascript:void(0);" onclick="if(document.getElementById('filter').style.display ==ninfo 'none'){document.getElementById('filter').style.display='';}else{document.getElementById('filter').style.display='none';}" >Filter</a>
+				 </h1>
+				<div id="filter" style="display:none">
+					<form method="post" action="results.shtml">
+						<div class="settingsArea">
+							<fieldset class="filter">
+								<legend>Departure time</legend>
+								<select>
+									<option value="0">Anytime</option>
+									<option value="1">Early (Before 8am)</option>
+									<option value="2">Morning (8am - 12pm)</option>
+									<option value="3">Afternoon (12pm - 4pm)</option>
+									<option value="4">Evening (4pm - 8pm)</option>
+									<option value="5">Night (After 8pm)</option>
+								</select>	
+							</fieldset>	
+							<fieldset class="filter">
+								<legend>Return time</legend>
+								<select>
+									<option value="0">Anytime</option>
+									<option value="1">Early (Before 8am)</option>
+									<option value="2">Morning (8am - 12pm)</option>
+									<option value="3">Afternoon (12pm - 4pm)</option>
+									<option value="4">Evening (4pm - 8pm)</option>
+									<option value="5">Night (After 8pm)</option>
+								</select>
+							</fieldset>	
+							<fieldset class="filter stations">
+								<legend>Preferred Airlines</legend>
+								<label for="AI"><input id="AI" type="checkbox" value="AI" name="airline_codes"><span class="airlogo fAI"></span> <span>Air India</span></label>
+								<label for="IC"><input id="IC" type="checkbox" value="IC" name="airline_codes"><span class="airlogo fIC"></span> <span>Air India IC</span></label>
+								<label for="G8"><input id="G8" type="checkbox" value="G8" name="airline_codes"><span class="airlogo fG8"></span> <span>GoAir</span></label>
+								<label for="6E"><input id="6E" type="checkbox" value="6E" name="airline_codes"><span class="airlogo f6E"></span> <span>IndiGo</span></label>
+								<label for="9W"><input id="9W" type="checkbox" value="9W" name="airline_codes"><span class="airlogo f9W"></span> <span>Jet Airways</span></label>
+								<label for="9W-K"><input id="9W-K" type="checkbox" value="9W-K" name="airline_codes"><span class="airlogo f9W-K"></span> <span>Jet Airways Konnect</span></label>
+								<label for="S2"><input id="S2" type="checkbox" value="S2" name="airline_codes"><span class="airlogo fS2"></span> <span>JetLite</span></label>
+								<label for="IT"><input id="IT" type="checkbox" value="IT" name="airline_codes"><span class="airlogo fIT"></span> <span>Kingfisher</span></label>
+								<label for="IT-RED"><input id="IT-RED" type="checkbox" value="IT-RED" name="airline_codes"><span class="airlogo fIT-RED"></span> <span>Kingfisher Red</span></label>
+								<label for="SG"><input id="SG" type="checkbox" value="SG" name="airline_codes"><span class="airlogo fSG"></span> <span>SpiceJet</span></label>
+							</fieldset>
+							
+						</div>
+							<p class="action"><button type="button" id="applyFilter" >Filter flights</button></p>		
+					</form>
+				</div>
+				<div id="display">
+					<div class="cart">
+						<div class="price">
+							<h3 id="totalfare" class="totalfare">Rs. 6,772</h3>
+							<span class="totalfare-int">6772</span>
+							<span>includes all charges (<a id="fbup">fare breakup</a>)</span>
+						</div>
+
+						<div class="buy">
+							<button>Book</button>
+						</div>
+
+					</div>
+					<div class="trip">
+					<div class="trips">
+						<h4 class="rP">Mumbai - New Delhi</h4>
+						<div class="sorts">
+							<a href="#" class="sort-trip2" >
+								departs
+							</a>
+							<a href="#" class="sort-trip2 middle" >
+								arrives
+							</a>
+							<a href="#" class="sort-trip2 last selected" >
+								price
+							</a>
+						</div>
+						<ul class="flights" id="trip1-list">
+							
+						<li class="selected">
+								<div class="flight-icons air">
+								</div>
+								<div class="flight-details">
+									<div class="time">6:13 - 8:03</div>
+									<div class="name">Spice E6-184</div>
+									<div class="duration">1h :50m</div>
+								</div>
+								<div class="trip-fare">Rs. 3,953</div>
+								<div class="fare">3953</div>
+								<div class="departs">1314924180000</div>
+								<div class="arrives">1314930780000</div>
+								<div class="cb"><span class="cbid">2</span></div>
+
+							</li><li class="">
+								<div class="flight-icons kf">
+								</div>
+								<div class="flight-details">
+									<div class="time">10:13 - 11:13</div>
+									<div class="name">KF Red E6-184</div>
+									<div class="duration">1h :0m</div>
+
+								</div>
+								<div class="trip-fare">Rs. 2,819</div>
+								<div class="fare">2819</div>
+								<div class="departs">1314938580000</div>
+								<div class="arrives">1314942180000</div>
+								<div class="cb"><span class="cbid">1</span></div>
+
+							</li><li class="">
+								<div class="flight-icons indigo">
+								</div>
+								<div class="flight-details">
+									<div class="time">11:13 - 12:13</div>
+									<div class="name">Indigo E6-184</div>
+									<div class="duration">1h :0m</div>
+
+								</div>
+								<div class="trip-fare">Rs. 1,753</div>
+								<div class="fare">1753</div>
+								<div class="departs">1314942180000</div>
+								<div class="arrives">1314945780000</div>
+								<div class="cb"><span class="cbid">0</span></div>
+
+							</li><li>
+								<div class="flight-icons indigo">
+								</div>
+								<div class="flight-details">
+									<div class="time">11:13 - 16:13</div>
+									<div class="name">Indigo E6-189</div>
+									<div class="duration">5h :0m</div>
+
+								</div>
+								<div class="trip-fare">Rs. 9,907</div>
+								<div class="fare">9907</div>
+								<div class="departs">1314942180000</div>
+								<div class="arrives">1314960180000</div>
+								<div class="cb"><span class="cbid">3</span></div>
+
+							</li>
+						</ul>
+
+						
+					</div>
+					
+					<div class="trips">
+						<h4 class="rP">Mumbai - New Delhi</h4>
+						<div class="sorts">
+							<a href="#" class="sort-trip2">
+								departs
+							</a>
+							<a href="#" class="sort-trip2 middle" >
+
+								arrives
+							</a>
+							<a href="#" class="sort-trip2 last selected" >
+								price
+							</a>
+						</div>
+					   <ul class="flights" id="trip2-list">
+							<li class="rP">
+								<div class="flight-icons indigo">
+								</div>
+
+								<div class="flight-details">
+									<div class="time">11:13 - 12:13</div>
+									<div class="name">Indigo E6-185</div>
+									<div class="duration">1h :0m</div>
+								</div>
+								<div class="trip-fare">Rs. 1,753</div>
+								<div class="fare">1753</div>
+
+								<div class="departs">1314942180000</div>
+								<div class="arrives">1314945780000</div>
+								<div class="cb"><span class="cbid">0</span></div>
+							</li><li class="rP">
+								<div class="flight-icons air">
+								</div>
+								<div class="flight-details">
+
+									<div class="time">6:13 - 8:03</div>
+									<div class="name">Spice E6-185</div>
+									<div class="duration">1h :50m</div>
+								</div>
+								<div class="trip-fare">Rs. 1,953</div>
+								<div class="fare">1953</div>
+
+								<div class="departs">1314924180000</div>
+								<div class="arrives">1314930780000</div>
+								<div class="cb"><span class="cbid">1</span></div>
+							</li><li class="rP selected">
+								<div class="flight-icons kf">
+								</div>
+								<div class="flight-details">
+
+									<div class="time">10:13 - 11:13</div>
+									<div class="name">KF Red E6-185</div>
+									<div class="duration">1h :0m</div>
+								</div>
+								<div class="trip-fare">Rs. 2,819</div>
+								<div class="fare">2819</div>
+
+								<div class="departs">1314938580000</div>
+								<div class="arrives">1314942180000</div>
+								<div class="cb"><span class="cbid">2</span></div>
+							</li><li class="rP">
+								<div class="flight-icons go">
+								</div>
+								<div class="flight-details">
+
+									<div class="time">11:13 - 16:13</div>
+									<div class="name">Indigo E6-188</div>
+									<div class="duration">5h :0m</div>
+								</div>
+								<div class="trip-fare">Rs. 9,917</div>
+								<div class="fare">9917</div>
+
+								<div class="departs">1314942180000</div>
+								<div class="arrives">1314960180000</div>
+								<div class="cb"><span class="cbid">3</span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				</div>
+            
+        </body>
+</html>
